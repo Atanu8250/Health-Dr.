@@ -11,4 +11,3 @@ Construct Week Group Project of Unit-3 (Clone of lose-it official website)
 - Boby Sharma
 - Gangaram Gawade
 - Prashant Yadav
-- Thakur Thilak Singh
