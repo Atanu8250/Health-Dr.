@@ -1,0 +1,144 @@
+#main{
+    border: 1px solid black;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    height: auto;
+    display: flex;
+    gap: 8%;
+}
+#add_details{
+    flex: 4;
+    border: 1px solid red;
+    height: 600px;
+
+}
+#calculation{
+    flex: 4;
+    border: 1px solid red;
+    height: 600px;
+}
+ #details{
+    width: 100%;
+    border: 1px solid green;
+    height: auto;
+   /* display: grid;
+     grid-template-columns: repeat(2,1fr); 
+    gap: 10px; */
+}
+/*#details>div{
+    border: 1px solid blue;
+    height: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#details>div:nth-child(1){
+    display: grid;
+    grid-template-columns: 20% 60% 15%;
+    gap: 2%; 
+    background-color: rgb(236, 233, 233);
+
+}
+
+#details>div:nth-child(1)>div:nth-child(1)>img{
+    width: 100%;
+    height: 100%;
+}
+#details>div:nth-child(1)>div:nth-child(3){
+    display: flex;
+    align-items: center;
+}
+#details>div:nth-child(1)>div:nth-child(3)>img{
+    width: 100%;
+    height: 50%;
+    
+}
+#details>div:nth-child(1)>div:nth-child(2){
+    
+    text-align: center;
+    background-color: aqua; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#details>div:nth-child(2){
+    display: grid;
+     grid-template-columns: 20% 60% ; 
+     gap: 5%;  
+    background-color: rgb(236, 233, 233);
+    
+}
+
+#details>div:nth-child(2)>div:nth-child(1)>img{
+width: 100%;
+height: 100%;
+}
+#details>div:nth-child(2)>div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+/* test 
+#content{
+    background-color: yellow;
+}
+#content>div{
+    border: 3px solid green;
+    height: 40px;
+    width: 100px;
+}
+#content>div{
+    display: grid;
+     grid-template-columns: 20% 70% ; 
+     gap: 5%;  
+    background-color: rgb(236, 233, 233);
+}
+#content>div>div{
+    border: 2px solid rgb(123, 192, 44);
+    height: 100%;
+    background-color: red;
+}
+#content>div>div img{
+    width: 100%;
+}
+#dropdown-container{
+    background-color: black;
+}
+#dropdown-container div{
+    float: auto;
+} */
+.dropdown-container{
+    background-color: black;
+    overflow: auto;
+   }
+   .dropdown-container a{
+    transition: 1s;
+    color:white;
+    text-decoration: none;
+    padding: 10px;
+    float: left;
+   }
+   .dropdown-content{
+    position: absolute;
+    top: 18vh;
+    background-color: black;
+    width: 110px;
+    display: none;
+   }
+   .dropdown-container{
+    float: left;
+   }
+   a:hover{
+    background-color: red;
+   }
+   .dropdown-content a{
+    display: block;
+    width: 110px;
+   }
+   .show{
+    display: block;
+   }
