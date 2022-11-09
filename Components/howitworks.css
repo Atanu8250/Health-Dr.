@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#thcontainer{
+  height: auto;
+  width:100%;
+  border:0px solid red;  
+  background-color: rgb(24,57,98);
+  padding:40px;
+}
+#thcontainer>div:nth-child(1){
+    width:100px;
+    margin:auto;
+    color:white;
+    background-color: white;
+    /* margin-top:40px; */
+    cursor: pointer;
+    border:0px solid red;
+}
+#thcontainer>div:nth-child(1)>img:hover{
+color:grey;
+}
+#thcontainer>div:nth-child(2){
+height: auto;
+width:50%;  
+display: flex;
+margin:auto;  
+border:0px solid red;
+justify-content: space-between;
+}
+#thcontainer>div:nth-child(2)>div{
+    height: auto;
+    width:23%;
+    font-weight: bold;
+    cursor:pointer;
+    border:0px solid blue;
+    margin:auto;
+    color:white;
+}
+#thcontainer>div:nth-child(2)>div>p:hover{
+    color:grey;
+}
+/* #thcotainer>div:nth-child(3){
+    height: 40%;
+} */
+#thcontainer>div:nth-child(3){
+height:auto;
+width:25%;
+border:0px solid red;
+display: flex;
+margin:auto;
+margin-top: 40px;
+margin-bottom: 40px;
+}
+#thcontainer>div:nth-child(3)>div{
+    width:20%;
+    height: auto;
+    border:0px solid blue;
+    color:white;
+}
+#thcontainer>div:nth-child(3)>div:hover{
+    color:orange;
+}
+#thcontainer>div:nth-child(4){
+    /* width:30%; */
+    border:0px solid red;
+    width:30%;
+    margin:auto;
+    /* margin-bottom:40px; */
+}
+#thcontainer>div:nth-child(4)>p{
+    text-align: center;
+    /* line-height: -10px; */
+    border:0px solid blue;
+    margin-top:-18px;
+    color:white;
+}
+#thcontainer>div:nth-child(4)>p~p:hover{
+ color:grey;
+ cursor:pointer;
+}
+#thcontainer>p{
+    text-align: center;
+    color:white;
+}
+/* //https://i0.wp.com/loseitblog.com/wp-content/uploads/2018/09/Why-Calories-Matter.png?w=1010&ssl=1 */
+
+
