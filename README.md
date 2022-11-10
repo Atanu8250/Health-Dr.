@@ -15,7 +15,7 @@ Construct Week Group Project of Unit-3 (Clone of lose-it official website)
 
 ## Collaborators
 - Atanu Karmakar (Team Lead)
-- Boby Sharma
 - Gangaram Gawade
-- Prashant Yadav
+- Boby Sharma
 - Thakur Thilak Singh
+- Prashant Yadav
