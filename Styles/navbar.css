@@ -33,12 +33,13 @@
     margin-top: 5px;
     display: flex;
     align-items: flex-start;
+    gap: 2%;
 }
 
 #navbar>div>div:first-child>a {
     color: white;
     text-decoration: none;
-    padding: 0px 5px;
+    padding: 0px 7px;
     border-radius: 5px;
     transition: background-color 600ms ease;
 }
@@ -124,6 +125,15 @@
 
     #navbar>div {
         width: 98%;
+    }
+
+    #navbar>div>div:first-child {
+        gap: 0.5%;
+    }
+
+    
+    #navbar>div>div:first-child>a {
+        padding: 0px 4px;
     }
 
     #navbar>div>div:first-child>img:first-child {
