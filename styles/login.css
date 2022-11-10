@@ -1,0 +1,91 @@
+*body{
+    padding: 0px;
+    margin: 0px;
+}
+#main{
+    width: 1231px;
+    height: 656px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 48px 32px;
+}
+#logo{
+    text-align: center;
+}
+#logo>img{
+    width: 147.2px;
+    height: 48px;
+}
+
+#loginform{
+    width: 448px;
+    height: 480px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 32px 40px;
+    box-sizing: border-box;
+}
+#loginform>input{
+    width:368px;
+    height: 38px;
+    border: 1px solid #ff9400;
+    border-radius: 5px;
+    margin-top: -10px;
+}
+
+#loginbtn{
+    width: 368px;
+    height: 38px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color: #ff9400;
+    color: white;
+    font-size: 18px;
+    border: 1px solid #ff9400;
+    margin-left: 5px;
+    border-radius: 5px;
+
+}
+a{
+    text-decoration: none;
+    color: #ff9400;
+
+    
+}
+.forgetpass{
+    text-align: center;
+    margin-top: 0px;
+}
+#or{
+    width: 368px;
+    height: 2px;
+    background-color: grey;
+}
+#signwapple{
+    width: 368px;
+    height: 38px;
+    margin: auto;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    margin-left: 5px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+@media all and (min-width:551px) and (max-width:1150px){
+    #main{
+        width: 100%;
+    }
+}
+@media all and (min-width:350px) and (max-width:550px){
+    #main{
+        width: 100%;
+    }
+    #loginform{
+        width: 100%;
+        
+    }
+}
