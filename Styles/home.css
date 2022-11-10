@@ -2,13 +2,13 @@
     border: 1px solid black;
     width: 80%;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 3%;
     height: auto;
     display: flex;
     gap: 8%;
 }
 #add_details{
-    flex: 4;
+    flex: 5;
     border: 1px solid red;
     height: 600px;
 
@@ -19,15 +19,19 @@
     height: 600px;
 }
  #details{
-    width: 100%;
-    border: 1px solid green;
-    height: auto;
+    width: 70%;
+    border: 0px solid green;
+    height: 5%;
    /* display: grid;
      grid-template-columns: repeat(2,1fr); 
     gap: 10px; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
 }
-/*#details>div{
-    border: 1px solid blue;
+
+#details>div{
+    border: 1px solid rgb(93, 93, 95);
     height: 100%;
     border-radius: 5px;
     cursor: pointer;
@@ -38,6 +42,9 @@
     gap: 2%; 
     background-color: rgb(236, 233, 233);
 
+}
+#details>div:nth-child(1)>div{
+    border: 0px solid pink;
 }
 
 #details>div:nth-child(1)>div:nth-child(1)>img{
@@ -56,19 +63,23 @@
 #details>div:nth-child(1)>div:nth-child(2){
     
     text-align: center;
-    background-color: aqua; 
+    /* background-color: aqua;  */
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: sans-serif;
     font-weight: bold;
+    font-size: 15px;
 }
 #details>div:nth-child(2){
     display: grid;
-     grid-template-columns: 20% 60% ; 
+     grid-template-columns: 20% 70% ; 
      gap: 5%;  
     background-color: rgb(236, 233, 233);
     
+}
+#details>div:nth-child(2)>div{
+    border: 0px solid pink;
 }
 
 #details>div:nth-child(2)>div:nth-child(1)>img{
@@ -81,6 +92,13 @@ height: 100%;
     justify-content: center;
     font-family: sans-serif;
     font-weight: bold;
+}
+
+#food{
+    width: 35%;
+    /* height: 200px;
+    border: 1px solid red; */
+    margin-top: 2%;
 }
 /* test 
 #content{
@@ -111,34 +129,3 @@ height: 100%;
 #dropdown-container div{
     float: auto;
 } */
-.dropdown-container{
-    background-color: black;
-    overflow: auto;
-   }
-   .dropdown-container a{
-    transition: 1s;
-    color:white;
-    text-decoration: none;
-    padding: 10px;
-    float: left;
-   }
-   .dropdown-content{
-    position: absolute;
-    top: 18vh;
-    background-color: black;
-    width: 110px;
-    display: none;
-   }
-   .dropdown-container{
-    float: left;
-   }
-   a:hover{
-    background-color: red;
-   }
-   .dropdown-content a{
-    display: block;
-    width: 110px;
-   }
-   .show{
-    display: block;
-   }
