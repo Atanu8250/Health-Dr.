@@ -9,8 +9,8 @@ let blankDevice = document.querySelector('#blank_device_section');
 let deviceSection = document.querySelector('#devices')
 
 firstButton.onclick = () => {
-    secondButton.removeAttribute('class')
-    firstButton.setAttribute('class', 'active')
+    secondButton.classList.toggle('active')
+    firstButton.classList.toggle('active')
     loader.style.display = 'block';
     
     setTimeout(() => {
@@ -23,8 +23,8 @@ firstButton.onclick = () => {
 
 
 secondButton.onclick = () => {
-    firstButton.removeAttribute('class')
-    secondButton.setAttribute('class', 'active')
+    firstButton.classList.toggle('active');
+    secondButton.classList.toggle('active');
     loader.style.display = 'block';
 
     setTimeout(() => {
@@ -186,9 +186,13 @@ const appendDeviceData = (data) => {
         //! console.log('div : ', div.children[3].innerHTML)
 
         let childDiv = div.children[3];
-        info.forEach(({ logo, span }) => {
+        info.forEach(({ logo, span }, i) => {
             let anchorTag = document.createElement('a');
-            anchorTag.href = '#'
+            if(i == (info.length - 1)){
+                anchorTag.href = 'support.html';
+            }else{
+                anchorTag.href = '#';
+            }
             anchorTag.innerHTML = `
                 <img src="${logo}"
                     alt="">
