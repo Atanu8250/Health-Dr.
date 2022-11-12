@@ -288,6 +288,7 @@ justify-content: center;
     background-color: orange;
     border-radius: 5px;
     color:white;
+    border:none;
 }
 #ratingsDiv+div>button:hover{
     cursor:pointer;
