@@ -4,12 +4,12 @@
 }
 #main{
     border: 0px solid black;
-    width: 80%;
+    width: 75%;
     margin: auto;
     margin-top: 3%;
     height: auto;
     display: flex;
-    gap: 8%;
+    gap: 2%;
 }
 #add_details{
     flex: 5;
