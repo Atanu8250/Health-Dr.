@@ -1,0 +1,167 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+#nav{
+    width: 1582px;
+    height: 80px;
+}
+#nav>img{
+    width: 230.55px;
+    height: 80px;
+}
+#main{
+    width: 1583px;
+    height: 475px;
+    background-image: url(https://assets.loseit.com/website/onboarding/Wave.svg);
+    /* display: flex; */
+    justify-content: center;
+    background-image: url(https://assets.loseit.com/website/onboarding/Wave.svg);
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: 100% auto;
+    background-position: bottom center;
+    padding-bottom: 100px;
+    height: 100vh;
+}
+#heading{
+    font-size: 24px;
+    font-family:Avenir,"Helvetica Neue", sans-serif;
+    color: #173962;
+    width: 500px;
+    height: 148px;
+    text-align: center;
+    margin: auto;
+    font-weight: 900;
+    margin-bottom: -25px;
+}
+#boxform{
+    width: 500px;
+    height: 400px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    text-align: center;
+    padding: 60px 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: auto;
+    font-family:Avenir,"Helvetica Neue", sans-serif;
+    font-size: 20px;
+    color: #173962;
+}
+#boxform>a>h2{
+    margin-left: -450px;
+    margin-top: -60px;
+    color: #173962;
+}
+#Current_w{
+    width: 192.5px;
+    height: 38px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    padding: 6px 12px;
+}
+#Current_w_unit{
+    width: 192.5px;
+    height: 38px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    padding: 6px 12px;
+}
+#goal_w{
+    width: 192.5px;
+    height: 38px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    padding: 6px 12px;
+}
+#goal_w_unit{
+    width: 192.5px;
+    height: 38px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    padding: 6px 12px;
+}
+#continue_btn{
+    width: 200px;
+    height: 44px;
+    background-color: #ff9400;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    padding: 6px 12px;
+    font-family:Avenir,"Helvetica Neue", sans-serif;
+}
+#boxform #text{
+    font-size: 13px;
+    color: #212529;
+    margin: 16px 50px;
+    font-family:Avenir,"Helvetica Neue", sans-serif;
+    line-height: 20px;
+}
+#footer2{
+    margin-top: 20px;
+}
+
+
+@media all and (min-width:501px) and (max-width:1175px){
+    #nav{
+        width: 100%;
+    }
+    #main{
+        width: 100%;
+        height: auto;
+    }
+}
+@media all and (min-width:401px) and (max-width:500px){
+    #nav{
+        width: 100%;
+    }
+    #main{
+        width: 100%;
+        height: auto;
+    }
+    #boxform{
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    #boxform>h2{
+        width: auto;
+        height: auto;
+    }
+    #boxform>a>h2{
+        margin-left: none;
+        margin-top: none;
+    }
+}
+@media all and (min-width:350px) and (max-width:400px){
+    #nav{
+        width: 100%;
+    }
+    #main{
+        width: 100%;
+        height: auto;
+    }
+    #boxform{
+        width: 100%;
+        height: auto;
+        margin-left: 40px;
+    }
+    #boxform>h2{
+        width: auto;
+        height: auto;
+    }
+    #boxform>a>h2{
+        margin-left: none;
+        margin-top: none;
+    }
+}

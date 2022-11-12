@@ -1,0 +1,25 @@
+#footer2{
+    width: 1583px;
+    height: 180px;
+    position: fixed;
+    background-color: #183962;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 20px;
+    font-size: 12px;
+    line-height: 20px;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+#footer2 h3{
+    color: white;
+    margin-bottom: 5px;
+}
+@media all and (min-width:350px) and (max-width:1175px){
+   #footer2{
+    width: 100%;
+    height: auto;
+   }
+}

@@ -1,6 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 #nav{
     width: 1200px;
@@ -143,9 +144,6 @@
     margin-top: 40px;
     margin-bottom: 40px;
     padding-top: 40px;
-    box-sizing: border-box;
-    border: 1px solid red;
-    /* display: none; */
 }
 #lost{
     width: 1000px;
@@ -195,7 +193,7 @@
     height: 60%;
 }
 #member{
-    width: 1592px;
+    width: 1583px;
     height: 552.92px;
     margin-top: 30px;
     background-color: #183962;
@@ -245,8 +243,193 @@
     font-family: Avenir, "Helvetica Neue", sans-serif;
 
 }
+#carousel{
+    background-color: #f1f1f1 ;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
 
-@media all and (min-width:551px) and (max-width:1150px){
+}
+#carousel>div:nth-child(1){
+    margin: auto;
+    width: 60%;
+    height:70% ;
+    margin-bottom: 20px;
+}
+.carouseldiv{
+    width:100%;
+    height: 100%;
+    margin: auto;
+}
+#carouseldiv1{
+    display: flex;
+    justify-content: space-between;
+}
+#carouseldiv2{
+   display: none;
+   justify-content: none;
+}
+#carouseldiv3{
+    display: none;
+    justify-content: none;
+}
+.car{
+    width: 45%;
+    height: 100%;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.car>img{
+    width: 50%;
+    height: 50%;
+    margin-bottom: 10px;
+}
+.car>h2{
+    color: #183962;
+    font-family: Avenir, "Helvetica Neue", sans-serif;
+}
+.car>p{
+    color:grey;
+    font: 20px;
+    font-family: Avenir, "Helvetica Neue", sans-serif;
+}
+#buttons{
+    margin: auto;
+}
+#buttons>button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color:grey;
+    border: none;
+    margin-left: 4px;
+}
+#buttons>button:nth-child(1){
+    background-color: blue;
+}
+#slider{
+    width: 65%;
+    height: 500px;
+    margin: auto;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: Avenir, "Helvetica Neue", sans-serif;
+}
+#slider>h1{
+    font-weight: 400;
+    color: #183962;
+}
+#slider>p{
+    font-weight: 400;
+    color:grey;
+    font-family: Avenir, "Helvetica Neue", sans-serif;
+    font-size: 20px;
+    line-height: 35px;
+    margin-bottom: 50px;
+}
+#slidermain{
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+}
+#btndiv1{
+    width: 5%;
+    font-size: 30px;
+    padding-top: 70px;
+    color: #ff9400;
+}
+#btndiv2{
+    width: 5%;
+    font-size: 30px;
+    padding-top: 70px;
+    color: #ff9400;
+}
+#sliderimage{
+    width: 90%;
+}
+#sliderimage>div:nth-child(1){
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#sliderimage>div:nth-child(2){
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: space-between;
+}
+#sliderimage>div:nth-child(3){
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: space-between;
+}
+#sliderimage>div>div{
+    width: 32%;
+    height: 100%;
+    justify-content: space-between;
+}
+#sliderimage>div>div>img{
+    width: 100%;
+    height: 70%;
+}
+#sliderimage>div>div>p{
+    font-size: 16px;
+    font-family: Avenir, "Helvetica Neue", sans-serif;
+    color:grey;
+    
+}
+
+#getweight{
+    padding: 15px 25px;
+    color: white;
+    background-color: #183962;
+    border: none;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+}
+#above_footer{
+    background-color: #f1f1f1;
+    background-image: url(https://assets.loseit.com/website/home/Pattern_50opacity_Long.svg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 253px;
+    padding: 50px 0px 70px;
+}
+#above_footer{
+    font-family: Avenir, "Helvetica Neue", sans-serif;
+    color: #ff9400;
+    font-size: 20px;
+    text-align: center;
+}
+#above_footer>div{
+    width: 25%;
+    margin: auto;
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+}
+#above_footer>div>div{
+    width: 48%;
+    height: 100%;
+}
+#above_footer>div>div>img{
+    width: 100%;
+    height: 100%;
+}
+
+@media all and (min-width:501px) and (max-width:1150px){
     #nav{
         width: 100%;
         padding:  0px 5px;
@@ -257,11 +440,14 @@
         
     }
     #mobile{
-        margin-left: 40px;
+        margin-left: -30px;
     }
     #top{
         width: 100%;
         height:  auto ;
+    }
+    #main>div{
+        margin: 0px 0px 0px 50px;
     }
     #logo2{
         display: none;
@@ -280,6 +466,7 @@
     }
     #carousel{
         width: 100%;
+        height: auto;
     }
     #lost{
         width: 100%;
@@ -300,9 +487,14 @@
         width:80%;
         gap: 20px;
     }
+    #carouselmain{
+        width: 80%;
+        height: auto;
+    }
+    
 } 
 
-@media all and (min-width:350px) and (max-width:549px){
+@media all and (min-width:350px) and (max-width:500px){
     #nav{
         width: 100%;
         padding:  0px 5px;
@@ -312,8 +504,11 @@
         width: 100%;
         
     }
+    #main>div{
+        margin: 0px 0px 0px 10px;
+    }
     #mobile{
-        margin-left: -40px;
+        margin-left: -60px;
     }
     #top{
         width: auto;
@@ -343,7 +538,9 @@
     }
     #carousel{
         width: 100%;
+        height: auto;
     }
+    
     #lost{
        display: none;
     }
@@ -361,5 +558,22 @@
         width: 100%;
         height: auto;
         flex-direction: column;
+    }
+    #carouselmain{
+        width: 100%;
+        height: 100%;
+    }
+    .carouseldiv{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        gap: 20px;
+    }
+    .car{
+        width: 100%;
+    }
+    #slider{
+        display: none;
     }
 }
