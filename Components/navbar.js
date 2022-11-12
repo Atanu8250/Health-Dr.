@@ -7,9 +7,9 @@ export default () => {
             <a href="#">Goals</a>
             <a href="#">Community</a>
             <a href="#">Insights</a>
-            <a href="#">Forums</a>
-            <a href="#">Apps & Devices</a>
-            <a href="#">Messages</a>
+            <a href="forums.html">Forums</a>
+            <a href="appsAndDevices.html">Apps & Devices</a>
+            <a href="message.html">Messages</a>
             <a href="#"><span class="material-symbols-outlined">settings</span></a>
         </div>
 
