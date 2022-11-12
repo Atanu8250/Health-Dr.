@@ -164,27 +164,80 @@ let food_items=[
       img:'https://d3hsih69yn4d89.cloudfront.net/web/0A7387EAEF176128D7B0539CCA0F2703.cache.png',
       name:'Burger',
       cal:52,
+      tf:1,
+      sf:0.3,
+      cho:24.1,
+      na:21,
+      carb:2,
+      fiber:5,
+      sug:7.3,
+      prot:8.8,
    },
    {
       img:'https://d3hsih69yn4d89.cloudfront.net/web/2B80E4D9F29AD9C0E2D05A16D776759F.cache.png',
-      name:'Pizza'
+      name:'Pizza',
+      cal:72,
+      tf:1,
+      sf:0.3,
+      cho:24.1,
+      na:21,
+      carb:2,
+      fiber:5,
+      sug:7.3,
+      prot:8.8,
    },
    {
       img:'https://d3hsih69yn4d89.cloudfront.net/web/4FF66578489F631936A9E358667F6C74.cache.png',
-      name:'Toor Daal'
+      name:'Toor Daal',
+      cal:65.2,
+      tf:1,
+      sf:0.3,
+      cho:24.1,
+      na:21,
+      carb:2,
+      fiber:5,
+      sug:7.3,
+      prot:8.8,
 
    },
    {
       img:'https://d3hsih69yn4d89.cloudfront.net/web/EA8B6AE31A4645C22B70DC64C44257A8.cache.png',
-      name:'French Fries'
+      name:'French Fries',
+      cal:52.8,
+      tf:1,
+      sf:0.3,
+      cho:24.1,
+      na:21,
+      carb:2,
+      fiber:5,
+      sug:7.3,
+      prot:8.8,
    },
    {
       img:'https://d3hsih69yn4d89.cloudfront.net/web/28B520FDFB32C696CB549D7BB95FCA55.cache.png',
-      name:'Chicken'
+      name:'Chicken',
+      cal:83.7,
+      tf:1,
+      sf:0.3,
+      cho:24.1,
+      na:21,
+      carb:2,
+      fiber:5,
+      sug:7.3,
+      prot:8.8,
    },
    {
       img:'https://d3hsih69yn4d89.cloudfront.net/web/C35355D4A0E666A6A36171624B6E1B62.cache.png',
-      name:'Masala Dosa'
+      name:'Masala Dosa',
+      cal:49.8,
+      tf:1,
+      sf:0.3,
+      cho:24.1,
+      na:21,
+      carb:2,
+      fiber:5,
+      sug:7.3,
+      prot:8.8,
 
    }
 ]
@@ -216,8 +269,11 @@ function display_food_items(data){
          
          div_a.style.width='500px'
          div_a.style.transitionDelay='1s'
-         div_a.style.height='300px'
-         div_a.style.border='1px solid red'
+         div_a.style.height='auto'
+         div_a.style.pointerEvents='auto'
+         div_a.style.boxShadow = 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px';
+         div_a.style.paddingBottom='10px'
+         div_a.style.border='0px solid red'
          div_a.style.margin='auto'
          div_a.style.marginLeft='-28px'
          div_a.style.marginBottom='40px'
@@ -234,16 +290,63 @@ function display_food_items(data){
           img_div_a.append(img_a)
           name_div_a.append(p_a)
           l_food.append(img_div_a,name_div_a)
-         div_a.append(l_food)
+          let in_div=document.createElement('div')
+          in_div.setAttribute('class','in_class')
+          let input_a=document.createElement('input')
+          input_a.type='number'
+          input_a.value=0
+          
+          //input_a.value='>0'
+          let add_food_btn=document.createElement('button')
+          add_food_btn.innerText='Add Food'
+          in_div.append(input_a,add_food_btn)
+           let cal_count_div=document.createElement('div')
+           cal_count_div.setAttribute('class','cal_count_div')
+           let cal_count_div_a=document.createElement('div')
+           let cal_p=document.createElement('p')
+           cal_p.innerText='Calories'
+           let t_cal_p=document.createElement('p')
+           t_cal_p.setAttribute('class','total_cal_count')
+          
+           
+           let cal_count_div_b=document.createElement('div')
+           let fat_p=document.createElement('p')
+           let sat_p=document.createElement('p')
+           let cholest_p=document.createElement('p')
+           let sod_p=document.createElement('p')
+           let cal_count_div_c=document.createElement('div')
+           let c_p=document.createElement('p')
+           let f_p=document.createElement('p')
+           let s_p=document.createElement('p')
+           let p_p=document.createElement('p')
+           input_a.oninput=()=>{
+            let as=input_a.value
+            let asd=el.cal
+            t_cal_p.innerText=as*asd||as*1
+            fat_p.innerText=`Total Calories: ${as*el.tf||el.tf*1}g`
+            sat_p.innerText=`sat.fat: ${el.st*as}g`
+            cholest_p.innerText=`Cholest: ${el.cho*as}mg`
+            sod_p.innerText=`Sodium: ${el.na*as}mg`
+            c_p.innerText=`Carb: ${el.carb*as}g`
+            f_p.innerText=`Fiber: ${el.fiber*as}mg`
+            s_p.innerText=`Sugar: ${el.sugar*as}g`
+            p_p.innerText=`Protien: ${el.prot*as}g`
+            console.log(el.cal)
+         }
+         cal_count_div_c.append(c_p,f_p,s_p,p_p)
+         cal_count_div_b.append(fat_p,cholest_p,sod_p)
+         cal_count_div_a.append(cal_p,t_cal_p)
+           cal_count_div.append(cal_count_div_a,cal_count_div_b,cal_count_div_c)
+         div_a.append(l_food,in_div,cal_count_div)
 //console.log(img_a)
-         tr.append(div_a)
+         tr.append(div_a,)
          img.style.display='none'
          td.style.display='none'
          console.log('ch',el.cal)
-         div_a.addEventListener('click',function(){
-            tr.innerHTML=""
-            console.log('hello')
-         })
+         // div_a.addEventListener('click',function(){
+         //    tr.innerHTML=""
+         //    console.log('hello')
+         // })
       })
 
    })
@@ -275,15 +378,351 @@ function search1_a(){
    }
 }
 
-// let showCalData_a=document.querySelectorAll('.showCalData')
-   
-// // showCalData.onclick=()=>{
-// //    console.log('hii')
-// // }
-// function calData(){
-   // let div=document.createElement('div')
-   // div.style.width='200px'
-   // div.style.height='300px'
-   // div.style.border='1px solid red'
-//    showCalData_a.append(div)
+
+
+let exercise_data=[
+   {
+      img:'https://d3hsih69yn4d89.cloudfront.net/web/7D498E94ED2574BDD8308C972A1856D1.cache.png',
+      name:'Abdominal crunches',
+      cal:'349',
+   },
+   {
+      img:'https://d3hsih69yn4d89.cloudfront.net/web/7D498E94ED2574BDD8308C972A1856D1.cache.png',
+      name:'ppp',
+      cal:'300',
+   },
+   {
+      img:'https://d3hsih69yn4d89.cloudfront.net/web/26DC63C011276F928C8CFE5CCBDA9C60.cache.png',
+      name:'Aerobic',
+      cal:132.4
+
+   },
+   {
+      img:'https://d3hsih69yn4d89.cloudfront.net/web/D6DFCED4B3E0EF7E16B20EB340216DA6.cache.png',
+      name:'Animal care',
+      cal:132.4
+
+   },
+   {
+      img:'https://d3hsih69yn4d89.cloudfront.net/web/D931380300FF1E37DB7B27C26D520513.cache.png',
+      name:'Arc Trainer',
+      cal:132.4
+
+   },
+   {
+      img:'https://d3hsih69yn4d89.cloudfront.net/web/4534EA5482DF83E633A95315EB3BBB25.cache.png',
+      name:'Archery',
+      cal:132.4
+
+   },
+   {
+      img:'https://d3hsih69yn4d89.cloudfront.net/web/FADBE8D374BF5A73CB717CD6C1462DB0.cache.png',
+      name:'badminton',
+      cal:132.4
+
+   },
+   {
+      img:'https://d3hsih69yn4d89.cloudfront.net/web/B8359A760B6AF7C98FF3D9343E9AC370.cache.png',
+      name:'Baseball',
+      cal:132.4
+
+   },
+   {
+      img:'https://d3hsih69yn4d89.cloudfront.net/web/CBAC110D92DC5B2C5824FDA30B7FD459.cache.png',
+      name:'Basketball',
+      cal:132.4
+
+   },
+   {
+      img:'https://d3hsih69yn4d89.cloudfront.net/web/21ACFEF3DAF1A68C1C197BFF1FF8DADE.cache.png',
+      name:'cycling',
+      cal:132.4
+
+   },
+   {
+      img:'https://d3hsih69yn4d89.cloudfront.net/web/D02C168FFFF8DB48B3A4F9D95B168DD8.cache.png',
+      name:'Boating',
+      cal:132.4
+
+   },
+   {
+      img:'https://d3hsih69yn4d89.cloudfront.net/web/410B76140A6FF74D9C51387A6F9060AF.cache.png',
+      name:'Boxing',
+      cal:132.4
+
+   },
+   {
+      img:'https://d3hsih69yn4d89.cloudfront.net/web/F816045F6D51FAAB5F569606742A3B42.cache.png',
+      name:'Bowling',
+      cal:132.4
+
+   },
+   {
+      img:'https://d3hsih69yn4d89.cloudfront.net/web/A18A712F646ACB8A9BA1B961616615ED.cache.png',
+      name:'Burpees',
+      cal:132.4
+
+   },
+   {
+      img:'https://d3hsih69yn4d89.cloudfront.net/web/9F5ABCE2FD6865A96B30FA5926360A75.cache.png',
+      name:'Cricket',
+      cal:132.4
+
+   },
+   {
+      img:'https://d3hsih69yn4d89.cloudfront.net/web/60E527B0F9825F8A771CC15DFB2F1688.cache.png',
+      name:'Dancing',
+      cal:132.4
+
+   },
+   {
+      img:'https://d3hsih69yn4d89.cloudfront.net/web/6AAE5F5F83409495117EB62C5B6C7FDE.cache.png',
+      name:'Lawn mowing',
+      cal:132.4
+
+   },
+]
+display_exercise_data(exercise_data)
+function display_exercise_data(data){
+data.forEach(function(el){
+  let tr=document.createElement('tr')
+  tr.setAttribute('class','show_ex_data')
+  tr.style.cursor='pointer'
+  let td_img=document.createElement('td')
+  let div_img=document.createElement('div')
+  let img=document.createElement('img')
+    let td=document.createElement('td')
+    img.src=el.img
+    td.innerText=el.name
+    div_img.append(img)
+    td_img.append(div_img)
+    tr.append(td_img,td)
+    document.getElementById('data_a').append(tr)
+
+    tr.addEventListener('click',function(){
+      let div_a=document.createElement('div')
+      
+      div_a.style.width='500px'
+      div_a.style.transitionDelay='1s'
+      div_a.style.height='auto'
+      div_a.setAttribute('class','exerData')
+      div_a.style.pointerEvents='auto'
+      div_a.style.boxShadow = 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px';
+      div_a.style.paddingBottom='10px'
+      div_a.style.border='0px solid red'
+      div_a.style.margin='auto'
+      div_a.style.marginLeft='-28px'
+      div_a.style.marginBottom='40px'
+      div_a.style.backgroundColor=' rgb(238, 236, 236)'
+
+      let l_exer=document.createElement('div')
+      l_exer.setAttribute('class','exer_name')
+       let img_div_a=document.createElement('div')
+       let name_div_a=document.createElement('div')
+       let img_a=document.createElement('img')
+      let p_a=document.createElement('p')
+      img_a.src=el.img
+       p_a.innerText=el.name
+       img_div_a.append(img_a)
+       name_div_a.append(p_a)
+       l_exer.append(img_div_a,name_div_a)
+        
+       let exer_in_div=document.createElement('div')
+       exer_in_div.setAttribute('class','exer_in_div')
+       let exer_in=document.createElement('input')
+       let h_p_div=document.createElement('div')
+       let h_p=document.createElement('p')
+       h_p.innerText='Hours'
+       let exer_btn=document.createElement('button')
+       exer_btn.innerText='Add Exercise'
+       h_p_div.append(h_p)
+        exer_in_div.append(exer_in,h_p_div,exer_btn)
+        let s_e_data=document.createElement('div')
+        s_e_data.setAttribute('class','s_e_data')
+        let showing=document.createElement('div')
+        let h_3=document.createElement('h3')
+        h_3.innerText='0 : Calories Burned'
+        exer_in.oninput=()=>{
+            let exd=exer_in.value
+         h_3.innerText=`${exd*el.cal} : Calories Burned`
+
+        }
+        showing.append(h_3)
+        s_e_data.append(showing)
+       div_a.append(l_exer,exer_in_div,s_e_data)
+      
+      tr.append(div_a,)
+      img.style.display='none'
+      td.style.display='none'
+      
+   })
+
+
+})
+}
+
+let searchb=document.getElementById('search_b')
+ searchb.onkeyup=()=>{
+   search1_b()
+ }
+//console.log(search1)
+function search1_b(){
+   let filter=searchb.value.toUpperCase()
+  // console.log(filter)
+   let mytable=document.querySelector('#data_a')
+  let tr= mytable.getElementsByTagName('tr')
+  // console.log(tr)
+   for(var i=0;i<tr.length;i++){
+      let td=tr[i].getElementsByTagName('td')[1];
+     // console.log('df',td)
+      if(td){
+         let textValue=td.textContent ||td.innerHTML;
+        // console.log("tr",textValue)
+         if(textValue.toLocaleUpperCase().indexOf(filter)>-1){
+            tr[i].style.display=''
+         }
+         else{
+            tr[i].style.display='none'
+         }
+      }
+   }
+}
+// function display_food_items(data){
+//    data.forEach(function(el){
+//       //console.log(el.name)
+//      // let t_body=document.createElement('tbody')
+//       let tr=document.createElement('tr')
+//       tr.setAttribute('class','showCalData')
+      
+//       tr.style.cursor='pointer'
+//       let td_img=document.createElement('td')
+//       let div_img=document.createElement('div')
+//       let img=document.createElement('img')
+//       let td=document.createElement('td')
+//       img.src=el.img
+//       td.innerText=el.name
+//       td.style.display='flex'
+//       td.style.alignItems='center'
+//       div_img.append(img)
+//       td_img.append(div_img)
+//       tr.append(td_img,td)
+//      // t_body.append(tr)
+//       document.getElementById('data').append(tr)
+//       tr.addEventListener('click',function(){
+//          let div_a=document.createElement('div')
+         
+//          div_a.style.width='500px'
+//          div_a.style.transitionDelay='1s'
+//          div_a.style.height='auto'
+//          div_a.style.pointerEvents='auto'
+//          div_a.style.boxShadow = 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px';
+//          div_a.style.paddingBottom='10px'
+//          div_a.style.border='0px solid red'
+//          div_a.style.margin='auto'
+//          div_a.style.marginLeft='-28px'
+//          div_a.style.marginBottom='40px'
+//          div_a.style.backgroundColor=' rgb(238, 236, 236)'
+         
+//          let l_food=document.createElement('div')
+//          l_food.setAttribute('class','food_name')
+//           let img_div_a=document.createElement('div')
+//           let name_div_a=document.createElement('div')
+//           let img_a=document.createElement('img')
+//          let p_a=document.createElement('p')
+//          img_a.src=el.img
+//           p_a.innerText=el.name
+//           img_div_a.append(img_a)
+//           name_div_a.append(p_a)
+//           l_food.append(img_div_a,name_div_a)
+//           let in_div=document.createElement('div')
+//           in_div.setAttribute('class','in_class')
+//           let input_a=document.createElement('input')
+//           input_a.type='number'
+//           input_a.value=0
+          
+//           //input_a.value='>0'
+//           let add_food_btn=document.createElement('button')
+//           add_food_btn.innerText='Add Food'
+//           in_div.append(input_a,add_food_btn)
+//            let cal_count_div=document.createElement('div')
+//            cal_count_div.setAttribute('class','cal_count_div')
+//            let cal_count_div_a=document.createElement('div')
+//            let cal_p=document.createElement('p')
+//            cal_p.innerText='Calories'
+//            let t_cal_p=document.createElement('p')
+//            t_cal_p.setAttribute('class','total_cal_count')
+          
+           
+//            let cal_count_div_b=document.createElement('div')
+//            let fat_p=document.createElement('p')
+//            let sat_p=document.createElement('p')
+//            let cholest_p=document.createElement('p')
+//            let sod_p=document.createElement('p')
+//            let cal_count_div_c=document.createElement('div')
+//            let c_p=document.createElement('p')
+//            let f_p=document.createElement('p')
+//            let s_p=document.createElement('p')
+//            let p_p=document.createElement('p')
+//            input_a.oninput=()=>{
+//             let as=input_a.value
+//             let asd=el.cal
+//             t_cal_p.innerText=as*asd||as*1
+//             fat_p.innerText=`Total Calories: ${as*el.tf||el.tf*1}g`
+//             sat_p.innerText=`sat.fat: ${el.st*as}g`
+//             cholest_p.innerText=`Cholest: ${el.cho*as}mg`
+//             sod_p.innerText=`Sodium: ${el.na*as}mg`
+//             c_p.innerText=`Carb: ${el.carb*as}g`
+//             f_p.innerText=`Fiber: ${el.fiber*as}mg`
+//             s_p.innerText=`Sugar: ${el.sugar*as}g`
+//             p_p.innerText=`Protien: ${el.prot*as}g`
+//             console.log(el.cal)
+//          }
+//          cal_count_div_c.append(c_p,f_p,s_p,p_p)
+//          cal_count_div_b.append(fat_p,cholest_p,sod_p)
+//          cal_count_div_a.append(cal_p,t_cal_p)
+//            cal_count_div.append(cal_count_div_a,cal_count_div_b,cal_count_div_c)
+//          div_a.append(l_food,in_div,cal_count_div)
+// //console.log(img_a)
+//          tr.append(div_a,)
+//          img.style.display='none'
+//          td.style.display='none'
+//          console.log('ch',el.cal)
+//          // div_a.addEventListener('click',function(){
+//          //    tr.innerHTML=""
+//          //    console.log('hello')
+//          // })
+//       })
+
+//    })
 // }
+
+
+
+
+// aaaaaaaaaaaaaaaaaaaaaaaaaaa
+// let ber=document.getElementById('search_breakfast')
+// ber
+const modalwrapper_b=document.querySelector('.modal_wrapper_b')
+const closeBtn_b=document.querySelector('.close_b')
+function open_b(){
+   modalwrapper_b.classList.add('active_b')
+}
+closeBtn_b.addEventListener('click',function(){
+   modalwrapper_b.classList.remove('active_b')
+})
+
+
+
+
+// bbbbbbbbbbbbbbbbbbbbb
+
+
+const progress=document.querySelector('.progress_done')
+const final_value=+document.getElementById('finalValue').innerText
+const max_value=+document.getElementById('max').innerText
+console.log(typeof(max_value))
+function changeWidth(){
+   progress.style.width=`${ (final_value/max_value)*100}%`
+   progress.innerText=`${Math.ceil((final_value/max_value)*100)}%`
+}
+changeWidth()
