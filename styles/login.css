@@ -1,6 +1,7 @@
 *body{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 #main{
     width: 1231px;
@@ -24,6 +25,7 @@
     margin-top: 20px;
     padding: 32px 40px;
     box-sizing: border-box;
+    position: relative;
 }
 #loginform>input{
     width:368px;
@@ -87,5 +89,20 @@ a{
     #loginform{
         width: 100%;
         
+    }
+    #loginform>input{
+        width: 100%;
+    }
+    
+    #loginbtn{
+        width: 100%;
+    
+    }
+    #signwapple{
+        width: 100%;
+        
+    }
+    #or{
+        width: 100%;
     }
 }

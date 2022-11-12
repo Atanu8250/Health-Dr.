@@ -1,0 +1,153 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+#nav{
+    width: 1582px;
+    height: 80px;
+}
+#nav>img{
+    width: 230.55px;
+    height: 80px;
+}
+#main{
+    width: 1583px;
+    height: 475px;
+    background-image: url(https://assets.loseit.com/website/onboarding/Wave.svg);
+    /* display: flex; */
+    justify-content: center;
+    background-image: url(https://assets.loseit.com/website/onboarding/Wave.svg);
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: 100% auto;
+    background-position: bottom center;
+    padding-bottom: 100px;
+    height: 100vh;
+}
+#boxform{
+    width: 500px;
+    height: 550px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    text-align: center;
+    padding: 80px 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: auto;
+    font-family:Avenir,"Helvetica Neue", sans-serif;
+    font-size: 20px;
+    color: #173962;
+}
+#boxform>a>h2{
+    margin-left: -450px;
+    margin-top: -80px;
+    color: #173962;
+}
+#boxform>h2{
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    
+}
+.img_w{
+    width: 14%;
+    height: 15%;
+    padding: 8px;
+}
+.wl_div{
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.calories{
+
+    width: 80%;
+    height: 15%;
+    text-align: start;
+}
+.calories>p{
+    font-size: 18px;
+    font-family:  Avenir, "Helvetica Neue", sans-serif;
+}
+.calories>h2{
+    font-size: 30px;
+    font-family:  Avenir, "Helvetica Neue", sans-serif;
+}
+#min_box{
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 40px;
+
+}
+#getloose{
+    width: 200px;
+    height: 44px;
+    background-color: #ff9400;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    padding: 6px 12px;
+    font-family:Avenir,"Helvetica Neue", sans-serif;
+    margin-top: 20px;
+}
+@media all and (min-width:501px) and (max-width:1175px){
+    #nav{
+        width: 100%;
+    }
+    #main{
+        width: 100%;
+        height: auto;
+    }
+}
+@media all and (min-width:401px) and (max-width:500px){
+    #nav{
+        width: 100%;
+    }
+    #main{
+        width: 100%;
+        height: auto;
+    }
+    #boxform{
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    #boxform>h2{
+        width: auto;
+        height: auto;
+    }
+    #boxform>a>h2{
+        margin-left: none;
+        margin-top: none;
+    }
+}
+@media all and (min-width:350px) and (max-width:400px){
+    #nav{
+        width: 100%;
+    }
+    #main{
+        width: 100%;
+        height: auto;
+    }
+    #boxform{
+        width: 100%;
+        height: auto;
+        margin-left: 40px;
+    }
+    #boxform>h2{
+        width: auto;
+        height: auto;
+    }
+    #boxform>a>h2{
+        margin-left: none;
+        margin-top: none;
+    }
+}
