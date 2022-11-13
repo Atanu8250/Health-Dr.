@@ -1,0 +1,202 @@
+*{
+    font-family: "Segoe UI", "Lucida Grande", Tahoma, Helvetica;
+}
+
+
+.linkpage{
+    width: 70%;
+    margin:auto;
+    margin-top: 40px;
+    display: flex;
+    
+}
+.rightside_linkpage{
+    display: flex;
+    margin-left: 70px;
+    border: 1px solid #C2C9CC;
+    border-radius: 5px;
+    color: #23323E;
+    font-weight: 700;
+   
+    
+}
+.Status{
+    border: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.profile_view{
+    border: 0;
+    border-left: 1px solid  #C2C9CC;
+    border-right: 1px solid #C2C9CC;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.Badges{
+    border: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.Profile_container{
+    width:70%;
+    margin:auto;
+    margin-top:10px;
+    display: flex;
+    /* border: 1px solid black; */
+
+}
+.Profile_container>p{
+    margin-bottom: 5px;
+
+}
+.profile{
+    width:30%;
+    border: 1px solid black;
+    height:auto
+}
+
+#image{
+    width: 100%;
+}
+.Username{
+    font-weight: 700;
+}
+.address{
+    font-weight: 700;
+}
+.Edit_profile>a,
+.message>a{
+    text-decoration: none;
+}
+.status_section{
+     width: 130%;
+    /* border: 1px solid red; */
+    margin-left: 170px;
+}
+#status_input ,
+.cmt_section{
+ 
+    width: 50%;
+margin-left:-190px;
+font-size: 14px;
+color: #956666;
+border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.status_section_header{
+    background-color:#EDF0F3;
+    padding-left: 14px;
+    font-weight: 700;
+    font-size: 10px;
+    padding: 10px;
+    color: #62475C;
+}
+.status_section_content,
+.cmt_section{
+    font-weight: 700;
+    font-size: 13px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 20px;
+    width: 50%;
+    ;
+}
+#cmt{
+    /* width: 100%; */
+     position: relative;
+     top:-20px;
+}
+.cmtt{
+    position: relative;
+    /* top:20px; */
+    left:20px;
+    font-weight: 700;
+    color: black;
+}
+#status_textara{
+  width: 60%;
+margin-left:-190px;
+font-size: 14px;
+color: #956666;
+display: none;
+border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#cmt_btn{
+    font-weight: 700;
+    border: 1px solid aqua;
+    border-radius: 4px;
+    position: relative;
+    left:190px;
+    top:-10px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#commt{
+    margin-left: -16px;
+}
+
+.cmt_section>.inner_cmt>img{
+    width: 10%;
+}
+.cmt_section{
+    margin-left: 30px;
+    
+} 
+.comment{
+    position: relative;
+    left:150px;
+    color:black;
+    top:-20px;
+}
+ .remove{
+    color: blue;
+    position: relative;
+    left:180px;
+
+ }
+ .cmt_section{
+    
+    margin-left: -190px;
+ }
+ .userdetails{
+     position: relative;
+     left:-258px;
+     display:none;
+ }
+ .userdetails>p{
+    margin-bottom: 20px;
+ }
+ .Location,
+ .Message,
+ .Activity{
+   padding-left: 100px;
+ }
+ .Email{
+    padding-left: 122px;
+ }
+ .Phone{
+    padding-left: 120px;
+ }
+.Bio{
+    padding-left: 140px;
+}
+.Interests{
+    padding-left: 110px;
+}
+.Badges_detail{
+    display: none;
+    position: relative;
+    left:-350px
+
+}
+
+.mid_section{
+    width: 40%;
+}

@@ -7,7 +7,7 @@ let gender=JSON.parse(localStorage.getItem("gender"));
 let weight=JSON.parse(localStorage.getItem("weight"));
 let height=JSON.parse(localStorage.getItem("height"));
 
-let userdata=[];
+let userdata= JSON.parse(localStorage.getItem("userdata")) || [];
 let get_btn=document.getElementById("btn");
 get_btn.onclick=()=>{
     Userdata();

@@ -1,0 +1,44 @@
+*{
+    font-family: "Segoe UI", "Lucida Grande", Tahoma, Helvetica;
+}
+
+body{
+    background-color: #F7F8F9;
+}
+#container-community{
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+
+}
+.sidebar{
+   width: 20%;
+    /* background-color: red; */
+}
+span{
+    font-size: 12px;
+} 
+.Activity{
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.Activity>span:nth-child(2){
+    position: relative;
+    left: 10px;
+    top: -5px;
+ 
+}
+/* .Activity:hover{
+   cursor: pointer;
+   /* background-color: blueviolet; */
+    /* border-radius: 5px; */
+    /* text-decoration: underline; */
+
+/* } */ 
+.active{
+    background-color:#1A73C5 ;
+}
+.bodysection{
+    width: 70%;
+}

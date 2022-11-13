@@ -18,7 +18,7 @@ login_btn.onclick=()=>{
     });
 
     if(!flag){
-        alert('⛔ User not found, please try to sign-in first!')
+        alert('⛔ User not found, please try to sign-up first!')
         window.location.replace("signup.html");
     }
 }

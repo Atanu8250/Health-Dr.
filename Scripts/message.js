@@ -67,10 +67,11 @@ document.querySelector('#chat>button').onclick = () => {
 
     let showDate = `${month} ${date.getDate()} ${date.toLocaleTimeString()}`
 
+    let obj = JSON.parse(localStorage.getItem('loggedinUser'));
     
 
-    let userName = localStorage.getItem('username') || 'Username';
-    let profile = localStorage.getItem('image') || 'https://cdn-icons-png.flaticon.com/512/3135/3135715.png';
+    let userName = obj.name || 'Username';
+    let profile = obj.profile || 'https://cdn-icons-png.flaticon.com/512/3135/3135715.png';
 
     let div = document.createElement('div')
     div.setAttribute('class', 'chat');
