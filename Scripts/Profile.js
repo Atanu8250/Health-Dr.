@@ -41,6 +41,10 @@ let usernamee=user[0].firstname+user[0].lastname ||  obj.name;
 document.querySelector(".Username").innerHTML=usernamee;
 document.querySelector(".address").innerHTML=user[0].location || ''
 // console.log(pimg)
+
+document.querySelector('#userinfo').innerHTML = obj.name;
+
+
 const append=(data)=>{
     let commentdata=JSON.parse(localStorage.getItem("comment"))||[];
     document.querySelector(".cmt_section").innerText="";
