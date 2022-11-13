@@ -13,6 +13,11 @@
     padding: 20px;
     box-sizing: border-box;
 }
+#logotext{
+    color: #183962;
+    margin-left: -800px;
+    margin-bottom: 10px;
+}
 #main{
     width: 1583px;
     height: 600px;
@@ -25,8 +30,8 @@
     display: flex;
 }
 #logo>img{
-    width: 200px;
-    height: 80.23px;
+    width: 150px;
+    height: 120px;
     
 }
 #login>button{
