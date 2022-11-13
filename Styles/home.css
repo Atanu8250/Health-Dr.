@@ -4,7 +4,7 @@
 
 #main {
     border: 0px solid black;
-    width: 75%;
+    width: 65%;
     margin: auto;
     margin-top: 3%;
     height: auto;
@@ -1064,6 +1064,7 @@ outline: none;
     height: 40px;
     width: 300px;
     border: 1px solid grey;
+    overflow: hidden;
 }
 
 .progress_done {

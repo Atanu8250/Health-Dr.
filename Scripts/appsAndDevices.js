@@ -36,9 +36,9 @@ secondButton.onclick = () => {
 
 
 //! Enable it to redirect the user to Premium page
-// document.querySelector('#upgrade_div').onclick = () => {
-//     window.location.href = "PremiumPage.html #premium_section"
-// }
+document.querySelector('#upgrade_div').onclick = () => {
+    window.location.href = "howitworks.html#thpremium";
+}
 
 
 let devicesData = [

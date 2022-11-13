@@ -1,3 +1,6 @@
+import footer from "../Components/footer.js";
+document.querySelector('#footer').innerHTML = footer();
+
 let btn1=document.getElementById("bt1");
 btn1.onclick=()=>{
     let div1=document.getElementById("carouseldiv1");
