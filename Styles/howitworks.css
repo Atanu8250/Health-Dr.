@@ -67,7 +67,7 @@
 #thNavbar+div{
 height: 300px;
 width:100%;
-border:1px solid red;
+border:0px solid red;
 text-align: center;
 background-color: rgb(255,146,0);
 background-image: url(https://assets.loseit.com/website/corporate/InteriorHeaderPattern.svg);
