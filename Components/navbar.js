@@ -1,3 +1,4 @@
+
 const navbar = () => {
 
     let obj = JSON.parse(localStorage.getItem('loggedinUser'));
@@ -28,6 +29,7 @@ const navbar = () => {
     </div>
     `
 }
+
 
 function singningout() {
 
