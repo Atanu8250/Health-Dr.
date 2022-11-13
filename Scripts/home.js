@@ -1,7 +1,8 @@
-import navbar from '../Components/navbar.js'
+import {navbar, singningout} from '../Components/navbar.js'
 let nav_div = document.getElementById('navbar')
 nav_div.innerHTML = navbar()
 
+singningout()
 
 // document.getElementById('clicks').addEventListener('click',myfun)
 // function myfun(){

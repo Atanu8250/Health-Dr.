@@ -1,6 +1,9 @@
-import navbar from '../Components/navbar.js'
+import {navbar, singningout} from '../Components/navbar.js'
 
 document.querySelector('#navbar').innerHTML = navbar();
+
+singningout()
+
 
 let loader = document.querySelector('#loader')
 let firstButton = document.querySelector('#choose>p:first-child');
@@ -191,7 +194,7 @@ const appendDeviceData = (data) => {
             if(i == (info.length - 1)){
                 anchorTag.href = 'support.html';
             }else{
-                anchorTag.href = '#';
+                anchorTag.href = 'https://apps.apple.com/app/lose-it/id297368629';
             }
             anchorTag.innerHTML = `
                 <img src="${logo}"

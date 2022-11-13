@@ -1,6 +1,8 @@
-import navbar from '../Components/navbar.js'
+import {navbar, singningout} from '../Components/navbar.js'
 
 document.querySelector('#navbar').innerHTML = navbar();
+
+singningout()
 
 document.querySelector('#friends+div>div>button').onclick = () => {
     document.querySelector('#friends').style.display = 'flex';
@@ -15,7 +17,7 @@ const displayReplyBox = (i) => {
 
 
 document.querySelectorAll('.friend').forEach((div, index) => {
-    div.onclick = () => {displayReplyBox(index)};
+    div.onclick = () => { displayReplyBox(index) };
 })
 
 document.querySelector('#chat>button').onclick = () => {
@@ -64,6 +66,8 @@ document.querySelector('#chat>button').onclick = () => {
     }
 
     let showDate = `${month} ${date.getDate()} ${date.toLocaleTimeString()}`
+
+    
 
     let userName = localStorage.getItem('username') || 'Username';
     let profile = localStorage.getItem('image') || 'https://cdn-icons-png.flaticon.com/512/3135/3135715.png';

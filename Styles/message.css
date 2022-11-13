@@ -84,6 +84,10 @@
     box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.352) 0px 0px 0px 1px;
 }
 
+#message>div:nth-child(3)>div:first-child>div{
+    margin: 10px 0px;
+}
+
 #message>div:nth-child(3)>div{
     padding: 15px;
 }
