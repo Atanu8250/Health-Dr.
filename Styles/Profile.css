@@ -75,6 +75,7 @@
 .status_section{
      width: 130%;
     /* border: 1px solid red; */
+    margin-left: 170px;
 }
 #status_input ,
 .cmt_section{
@@ -131,14 +132,14 @@ box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 
     border: 1px solid aqua;
     border-radius: 4px;
     position: relative;
-    left:290px;
+    left:190px;
     top:-10px;
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
 }
 #commt{
-    margin-left: 80px;
+    margin-left: -16px;
 }
 
 .cmt_section>.inner_cmt>img{
@@ -166,7 +167,7 @@ box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 
  }
  .userdetails{
      position: relative;
-     left:-360px;
+     left:-258px;
      display:none;
  }
  .userdetails>p{
@@ -194,4 +195,8 @@ box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 
     position: relative;
     left:-350px
 
+}
+
+.mid_section{
+    width: 40%;
 }

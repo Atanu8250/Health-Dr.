@@ -11,8 +11,8 @@ const navbar = () => {
             <img src="./Images/logo.png" alt="">
             <a href="home.html">Home</a>
             <a href="#">Goals</a>
-            <a href="#">Community</a>
-            <a href="#">Insights</a>
+            <a href="Community.html">Community</a>
+            <a href="Insight.html">Insights</a>
             <a href="forums.html">Forums</a>
             <a href="appsAndDevices.html">Apps & Devices</a>
             <a href="message.html">Messages</a>
@@ -21,7 +21,7 @@ const navbar = () => {
 
 
         <div>
-            <a href="#">${n}</a>
+            <a href="Profile.html">${n}</a>
             <a href="#">Upgrade</a>
             <a id="signOut">Sign out</a>
             <a href="#"><img src="${image}" alt=""></a>
@@ -35,6 +35,7 @@ function singningout() {
 
     document.querySelector('#signOut').onclick = () => {
         localStorage.removeItem('loggedinUser');
+        localStorage.removeItem('update');
         window.location.href = 'index.html';
     }
 
