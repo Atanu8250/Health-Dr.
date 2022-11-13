@@ -63,6 +63,7 @@
 }
 #thNavbar>div>div:nth-child(2)>button:hover{
     cursor:pointer;
+    background-color: rgb(255, 184, 52);
 }
 #thNavbar+div{
 height: 300px;
