@@ -12,163 +12,149 @@
     top: 0;
     left: 0;
     z-index: 10;
-    padding: 0% 15%;
+}
+
+#navbar>div {
+    margin: 0px auto;
+    width: 1024px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     font-family: "Segoe UI", "Lucida Grande", Tahoma, Helvetica;
-    font-size: 12px;
+    font-size: 75%;
     line-height: 25px;
 }
 
 
+
 /* 1st side */
 
-#navbar>div:first-child {
+#navbar>div>div:first-child {
     margin-top: 5px;
     display: flex;
-    justify-content: flex-start;
     align-items: flex-start;
+    gap: 2%;
 }
 
-#navbar>div:first-child>a {
+#navbar>div>div:first-child>a {
     color: white;
     text-decoration: none;
-    padding: 0px 13px;
+    padding: 0px 7px;
     border-radius: 5px;
     transition: background-color 600ms ease;
 }
 
-#navbar>div:first-child>a:last-child:hover{
+#navbar>div>div:first-child>a:nth-child(7){
+    white-space: nowrap;
+}
+
+#navbar>div>div:first-child>a:last-child:hover {
     background-color: #12568d;
 }
 
-#navbar>div:first-child>a:hover {
+#navbar>div>div:first-child>a:hover {
     background-color: #0f4570;
     text-decoration: underline;
 }
 
 .material-symbols-outlined {
-    font-size: 13px;
+    font-size: 0.8em;
 }
 
-#navbar>div:first-child>img:first-child {
+#navbar>div>div:first-child>img:first-child {
     margin-top: -15px;
-    width: 12%;
+    width: 6vw;
     margin-right: -10px;
     cursor: pointer;
 }
 
 
 
-
-
 /* 2nd part */
 
-#navbar>div:nth-child(2) {
-    margin-top: 5px;
+#navbar>div>div:nth-child(2) {
+    margin: 5px 0px 0px 20px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-#navbar>div:nth-child(2)>a {
+#navbar>div>div:nth-child(2)>a {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    padding: 0px 10px;
+    padding: 0px 3%;
     transition: background-color 600ms ease;
 }
 
-#navbar>div:nth-child(2)>a:nth-child(2){
+
+#navbar>div>div:nth-child(2)>a:nth-child(3){
+    white-space: nowrap;
+}
+
+
+#navbar>div>div:nth-child(2)>a:nth-child(2) {
     border-left: 1px solid white;
     border-right: 1px solid white;
     border-radius: 0px;
 }
 
-#navbar>div:nth-child(2)>a:last-child>img {
+#navbar>div>div:nth-child(2)>a:last-child {
+    width: 4em;
+}
+
+#navbar>div>div:nth-child(2)>a:last-child>img {
     width: 100%;
 }
 
-#navbar>div:nth-child(2)>a:nth-child(3) {
-    width: 95px;
+#navbar>div>div:nth-child(2)>a:nth-child(3) {
+    width: 6em;
 }
 
-#navbar>div:nth-child(2)>a:last-child:hover {
+#navbar>div>div:nth-child(2)>a:last-child:hover {
     background-color: #12568d;
 }
 
-#navbar>div:nth-child(2)>a:hover {
+#navbar>div>div:nth-child(2)>a:hover {
     background-color: #0f4570;
     text-decoration: underline;
 }
 
 
-@media all and (max-width: 1024px) and (min-width: 769px) {
-    #navbar {
-        padding: 0%;
+@media all and (max-width: 1024px) and (min-width: 200px) {
+
+    #navbar>div {
+        width: 98%;
     }
 
-    #navbar>div:first-child {
-        width: 65%;
+    #navbar>div>div:first-child {
+        gap: 0.5%;
+    }
+
+    
+    #navbar>div>div:first-child>a {
+        padding: 0px 4px;
+    }
+
+    #navbar>div>div:first-child>img:first-child {
+        margin-top: 2px;
+        width: 10%;
+    }
+
+    #navbar>div {
         font-size: 10px;
-    }
-
-    #navbar>div:first-child>img:first-child {
-        width: 15%;
-    }
-
-
-    #navbar>div:nth-child(2) {
-        width: 25%;
-        font-size: 10px;
-    }
-
-    #navbar>div:nth-child(2)>a:nth-child(3) {
-        width: 58px;
-    }
-
-    #navbar>div:nth-child(2)>a:last-child {
-        width: 45px;
-    }
-}
-
-@media all and (max-width: 768px) and (min-width: 318px) {
-    #navbar {
-        padding: 0%;
-
-    }
-
-    #navbar>div:first-child {
-        width: 65%;
-        font-size: 1vw;
-        padding: 0px 1vw;
-    }
-
-    #navbar>div:first-child>a {
-        width: fit-content;
     }
 
     .material-symbols-outlined {
-        font-size: 1vw;
+        font-size: 1.4vw;
     }
 
-    #navbar>div:first-child>img:first-child {
-        width: 19%;
+    #navbar>div>div:nth-child(2)>a:nth-child(3) {
+        width: 8vw;
     }
 
-
-    #navbar>div:nth-child(2) {
-        width: 35%;
-        font-size: 1vw;
-        padding: 0px 1vw;
+    #navbar>div>div:nth-child(2)>a:last-child {
+        width: 5vw;
     }
 
-    #navbar>div:nth-child(2)>a {
-        width: fit-content;
-    }
-
-    #navbar>div:nth-child(2)>a:last-child {
-        display: none;
-    }
 }
