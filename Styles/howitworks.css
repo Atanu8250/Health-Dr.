@@ -416,6 +416,7 @@ color:rgb(24,57,98);
       color:white;
       font-size:14px;
       border-radius: 5px;
+      border: none;
       border-color: rgb(24,57,98);
       background-color: orange;
       font-family: Arial, Helvetica, sans-serif;
