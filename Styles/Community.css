@@ -1,0 +1,361 @@
+*{
+    font-family: "Segoe UI", "Lucida Grande", Tahoma, Helvetica;
+}
+
+body{
+    background-color: #F7F8F9;
+}
+#container-community{
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+
+}
+.sidebar{
+   width: 20%;
+    /* background-color: red; */
+}
+span{
+    font-size: 12px;
+} 
+.Activity{
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.Activity>span:nth-child(2){
+    position: relative;
+    left: 10px;
+    top: -5px;
+ 
+}
+/* .Activity:hover{
+   cursor: pointer;
+   /* background-color: blueviolet; */
+    /* border-radius: 5px; */
+    /* text-decoration: underline; */
+
+/* } */ 
+.active{
+    background-color:#1A73C5 ;
+}
+.bodysection{
+    width: 70%;
+}
+.activity-section{
+    width: 85%;
+    margin-left:20px;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.activity-header{
+    background-color:#EDF0F3;
+    padding-left: 10px;
+    font-weight: 700;
+    font-size: 10px;
+    padding: 10px;
+     
+}
+.activity-content{
+    font-size: 15px;
+    padding: 10px;
+    padding-left: 40px;
+     padding-bottom: 30px;
+}
+.activity-content>span{
+    font-weight: 700;
+    font-size: 13px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#invitations{
+    display:none;
+    width: 85%;
+margin-left:20px;
+font-size: 14px;
+color: #956666;
+border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.invitations-header{
+    background-color:#EDF0F3;
+    padding-left: 14px;
+    font-weight: 700;
+    font-size: 10px;
+    padding: 10px;
+    color: #62475C;
+}
+.Invitations-content{
+    font-weight: 700;
+    font-size: 13px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 20px;
+}
+.add-friend{
+    padding: 0%;
+    margin: 0%;
+}
+.add-friend:hover{
+    cursor: pointer;
+    background-color: #748a9e;
+    width: fit-content;
+    border-radius: 8x;
+    height: fit-content;
+    
+}
+.Friend_request{
+    width: 85%;
+    margin-left:20px;
+    font-size: 14px;
+    border-radius: 10px;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+} 
+.Friend_request_header{
+    background-color:#EDF0F3;
+    padding-left: 10px;
+    font-weight: 700;
+    font-size: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+     
+}
+.Friend_request_content{
+    font-size: 15px;
+    padding: 10px;
+    padding-left: 40px;
+     padding-bottom: 30px;
+}
+#search{
+    padding: 4px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border:1px solid #B0B3B6;
+   
+}
+#img{
+    position: relative;
+    left:20px;
+    top:6px
+}
+.Friend_request_content>span{
+    font-weight: 700;
+    font-size: 13px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.Edit_profile{
+    width: 85%;
+    margin-left:20px;
+    font-size: 14px;
+    border-radius: 10px;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.Edit_profile_header{
+    background-color:#EDF0F3;
+    padding-left: 10px;
+    font-weight: 700;
+    font-size: 10px;
+    padding: 10px;
+     
+}
+.Edit_profile_content{
+    font-size: 15px;
+    padding: 10px;
+    padding-left: 40px;
+     padding-bottom: 30px;
+     
+}
+.Edit_profile_content>input[type="text"],
+#location,
+#phone{
+    width: 50%;
+    margin-left: 80px;
+    padding:5px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+.linformation{
+    width: 35%;
+    font-size: 11px;
+    position: relative;
+    left: 190px;
+    top: -30px;
+    color: #A6AAB9;
+
+}
+#Location,#Phone{
+    position: relative;
+    left:40px
+}
+#location,
+#phone{
+    width: 50%;
+    margin-left: 120px;
+    padding:5px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+#phone{
+    width: 50%;
+    margin-left: 135px;
+    padding:5px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+#Short{
+    position: relative;
+    left: 40px;
+} 
+#short{
+    width: 50%;
+    margin-left:115px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+#Long{
+    position: relative;
+    left: 40px;
+    top:-60px;
+}
+#long{  
+    position: relative;
+    left:115px;
+}
+.Rinformation{
+    width: 35%;
+    font-size: 10.33px;
+    color: #A6AAB9;
+    position: relative;
+    left: 180px;
+    top: 0px;
+    margin-bottom: 20px;
+
+}
+#Activities{
+    position: relative;
+    left: 40px;
+}
+#activities{
+    width: 50%;
+    margin-left:110px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+
+}
+#Interests{
+    position: relative;
+    left: 40px;
+
+}
+#interests{
+    width: 50%;
+    margin-left:115px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+#Website{
+    position: relative;
+    left: 40px;
+
+}
+#website{
+    width: 50%;
+    margin-left:115px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+#save-btn{
+    position: relative;
+    left: 390px;
+    /* border: 2px solid #E6E8EA; */
+    padding: 10px;
+    font-weight: 900;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+#save-btn:hover{
+    background-color: rgb(185, 185, 185);
+    /* border: 2px solid #E6E8EA; */
+
+}
+
+
+.Edit_picture_section{
+    width: 85%;
+    margin-left:20px;
+    font-size: 14px;
+    display: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.Edit_picture_header{
+    background-color:#EDF0F3;
+    padding-left: 10px;
+    font-weight: 700;
+    font-size: 10px;
+    padding: 10px;
+     
+}
+.Edit_picture_content{
+    font-size: 15px;
+    padding: 10px;
+    padding-left: 40px;
+     padding-bottom: 30px;
+}
+.Edit_picture_content>span{
+    font-weight: 700;
+    font-size: 13px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+#update_img{
+    width: 30%;
+}
+
+
+#upload{
+    position: relative;
+    left: 220px;
+    top: -120px;
+}
+#uploadimg{
+    border: 1px solid black;
+    margin-left: -30px;
+    width: 60%;
+    height:130px
+}
+#upload_btn{
+    position: relative;
+    left: 90px;
+    /* border: 2px solid #E6E8EA; */
+    padding: 10px;
+    font-weight: 900;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+#upload_btn:hover{
+    background-color: aqua;
+}

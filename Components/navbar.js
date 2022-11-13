@@ -1,4 +1,4 @@
-export default () => {
+ const navbar= () => {
     return `
     <div>
             <img src="./Images/logo.png" alt="">
@@ -21,3 +21,4 @@ export default () => {
         </div>
     `
 }
+export default navbar;
