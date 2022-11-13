@@ -19,7 +19,7 @@
     margin-bottom: 10px;
 }
 #main{
-    width: 1583px;
+    width: 100vw;
     height: 600px;
     background-image: url(https://assets.loseit.com/website/home/Wave.png),linear-gradient(90deg, rgba(245, 128, 30, 1) 0, rgba(246, 146, 29, 1) 100%);
     background-size: 100% 500px;
@@ -30,7 +30,7 @@
     display: flex;
 }
 #logo>img{
-    width: 150px;
+    width: 120px;
     height: 120px;
     
 }
@@ -104,7 +104,7 @@
     margin-left: 40px;
 } 
 #weightdiv{
-    width: 1583px;
+    width: 100vw;
     height: 322.11px;
     margin-top: 60px;
     margin-bottom: 60px;
@@ -144,7 +144,7 @@
     height: 140px;
 }
 #carousel{
-    width: 1583px;
+    width: 100vw;
     height: 390px;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -198,7 +198,7 @@
     height: 60%;
 }
 #member{
-    width: 1583px;
+    width: 100vw;
     height: 552.92px;
     margin-top: 30px;
     background-color: #183962;

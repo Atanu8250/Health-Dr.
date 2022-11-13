@@ -13,9 +13,9 @@
 #logo{
     text-align: center;
 }
-#nav>img{
+#logo>img{
     width: 150px;
-    height: 105px;
+    height: 150px;
 }
 
 #loginform{

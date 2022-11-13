@@ -39,7 +39,7 @@ document.querySelector(".profile").innerHTML=`<img src=${pimg} id="image">`;
 
 let usernamee=user[0].firstname+user[0].lastname ||  obj.name;
 document.querySelector(".Username").innerHTML=usernamee;
-document.querySelector(".address").innerHTML=user[0].location
+document.querySelector(".address").innerHTML=user[0].location || ''
 // console.log(pimg)
 const append=(data)=>{
     let commentdata=JSON.parse(localStorage.getItem("comment"))||[];
