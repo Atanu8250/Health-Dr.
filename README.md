@@ -1,4 +1,4 @@
-# Health - Dr.
+# Health-Dr.
 Construct Week Group Project of Unit-3 (Clone of lose-it official website)
 
 ## Original Website: [Lose-it official website](https://loseit.com/)
